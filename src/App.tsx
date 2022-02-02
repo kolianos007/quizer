@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { FC } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import AppRouter from './routes/AppRouter';
 import './App.css';
 
-function App() {
-  return <div className="App">App</div>;
-}
+const App: FC = () => (
+  <Router>
+    <AppRouter />
+  </Router>
+);
 
 export default App;
