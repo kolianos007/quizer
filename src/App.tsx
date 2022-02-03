@@ -2,12 +2,14 @@ import React, { FC } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import AppRouter from './routes/AppRouter';
-import './App.css';
+import './App.sass';
 
 const App: FC = () => (
-  <Router>
-    <AppRouter />
-  </Router>
+  <div className="app">
+    <Router>
+      <AppRouter />
+    </Router>
+  </div>
 );
 
 export default App;
